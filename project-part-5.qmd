@@ -1,0 +1,34 @@
+---
+title: ""
+format: html
+---
+
+## Quarto
+
+In this part, we try to figure out which of driving accuracy, 
+approach shots, and putting has the most impact on the score. 
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+library(tidyverse)
+library(patchwork)
+golf_data <- read_csv(file = "dg_course_table.csv")
+```
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+p1 <- golf_data |> ggplot(mapping = aes(x = adj_score_to_par, y = adj_driving_accuracy)) + 
+    geom_point() + geom_smooth(method = "lm", se = FALSE)   + labs(title = "Relation between driving accuracy and score", subtitle = "As expected, the lower the driving accuracy, the worse the score", x= "Score", y = "Average Driving Accuracy"
+    )
+p2 <- golf_data |> ggplot(mapping = aes(x = adj_score_to_par, y = app_sg)) + 
+   geom_point() + geom_smooth(method = "lm", se = FALSE) + labs(title = "Relation between approach shots and score", subtitle = "Once again, we can see that approach shots have a significant effect on the score.", x = "Score", y = "Strokes Gained Putting")
+p3 <- golf_data |> ggplot(mapping = aes(x = adj_score_to_par, y = putt_sg)) + 
+    geom_point() + geom_smooth(method = "lm", se = FALSE) + labs(title = "Relation between putting and score", subtitle = "Putting clearly has an effect on the score", x = "Score", y = "Strokes Gained Putting")
+p1
+p2 
+p3
+
+```
+We can clearly see that the quality of the approach shots affects the score the most.

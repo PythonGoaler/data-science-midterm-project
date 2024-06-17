@@ -1,0 +1,20 @@
+---
+title: ""
+author: ""
+format: html
+execute: 
+  message: false
+  warning: false
+  echo: false
+---
+
+```{r}
+library(tidyverse)
+
+golf_data <- read_csv(file = "dg_course_table.csv")
+```
+
+```{r}
+golf_data |> ggplot(mapping = aes(x = adj_score_to_par, y = yardage)) + geom_point() + geom_smooth(method = "lm", se = FALSE, color = "green") + labs(title = "Relation between yardage of PGA course and score", subtitle = "Yardage has a slight effect on the score.", x = "Score to Par", y = "Yardage ", caption = "Data from datagolf.com") + theme(plot.title = element_text(face = "bold")) 
+```
+

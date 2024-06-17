@@ -1,0 +1,25 @@
+---
+title: ""
+author: ""
+format: html
+execute: 
+  echo: false
+  message: false
+---
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+library(tidyverse)
+golf_data <- read_csv(file = "dg_course_table.csv")
+``` 
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+golf_data |> ggplot(mapping = aes(x = putt_sg, y = adj_score_to_par)) + 
+    geom_point() + geom_smooth(method = "lm", se = FALSE) + 
+  labs(title = "Relation between average score to par and strokes gained putting", subtitle = "As expected, we can see a clear corelation between the two.", x = "Strokes gained putting", y = "Average score to par") + theme(plot.title = element_text(face = "bold")) 
+
+```
+

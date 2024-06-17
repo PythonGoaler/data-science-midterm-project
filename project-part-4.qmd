@@ -1,0 +1,45 @@
+---
+title: ""
+format: html
+---
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+library(tidyverse)
+library(patchwork)
+golf_data <- read_csv(file = "dg_course_table.csv")
+```
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+p1 <- golf_data |> ggplot(mapping = aes(x = adj_par_3_score, y = adj_score_to_par)) + 
+    geom_point() + geom_smooth(method = "lm", se = FALSE) + labs(title = "Relation between Par 3 Score and Total Score", subtitle = "Clear Relation", x = "Par 3 Score", y = "Average score to par")
+
+model <- lm(adj_score_to_par ~ adj_par_3_score, data = golf_data)
+slope <- coef(model)[2]
+
+p2 <- golf_data |> ggplot(mapping = aes(x = adj_par_4_score, y = adj_score_to_par)) + 
+    geom_point() + geom_smooth(method = "lm", se = FALSE) + labs(title = "Relation between Par 4 Score and Total Score", subtitle = "Clear Relation", x = "Par 4 Score", y = "Average score to par")
+
+model2 <- lm(adj_score_to_par ~ adj_par_4_score, data = golf_data)
+slope2 <- coef(model2)[2]
+
+p3 <- golf_data |> ggplot(mapping = aes(x = adj_par_5_score, y = adj_score_to_par)) + 
+    geom_point() + geom_smooth(method = "lm", se = FALSE) + labs(title = "Relation between Par 5 Score and Total Score", subtitle = "Clear Relation", x = "Par 5 Score", y = "Average score to par")
+
+
+model3 <- lm(adj_score_to_par ~ adj_par_5_score, data = golf_data)
+slope3 <- coef(model3)[2]
+
+p1
+p2
+p3
+print(slope)
+print(slope2)
+print(slope3)
+
+```
+
+Calculating the slopes, we see that the par 4 score has the most effect on the total score. However, the difference between the effect the par 4s and par3s have on the score is almost negligible.

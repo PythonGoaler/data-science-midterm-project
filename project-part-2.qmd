@@ -1,0 +1,23 @@
+---
+title: ""
+author: ""
+format: html
+execute:
+  echo: false
+  message: false
+---
+
+#
+```{r}
+#| echo: FALSE
+#| message: FALSE
+library(tidyverse)
+golf_data <- read_csv(file = "dg_course_table.csv")
+```
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+golf_data |> ggplot(mapping = aes(x = adj_driving_distance, y = adj_driving_accuracy)) + geom_point() + geom_smooth(method = "lm", se = FALSE, color = "brown") + labs(title = "Relationship between driving accuracy and distance", subtitle = "As expected, when the Driving Distance goes up, the driving accuracy goes down a little.", x = "Average Driving Distance", y = "Average Driving Accuracy", caption = "Data from datagolf.com") + theme(plot.title = element_text(face = "bold")) 
+```
+
