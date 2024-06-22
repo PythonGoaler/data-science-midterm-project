@@ -1,0 +1,17 @@
+{
+  "hash": "0cde6d350dbd1be2aecda790e86e8357",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Relation between Fairway Width and Score - note: not sure if this is a good graph to use.\"\nexecute:\n  message: false\n  echo: false\n  warning: false\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](width_fairway_score_relation_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](width_fairway_score_relation_files/figure-html/unnamed-chunk-2-2.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "width_fairway_score_relation_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

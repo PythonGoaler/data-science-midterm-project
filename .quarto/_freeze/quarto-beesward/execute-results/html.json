@@ -1,0 +1,17 @@
+{
+  "hash": "7e95ddce22c3f2c4092936f4375aa631",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Testing beeswarm\"\nexecute:\n  echo: FALSE\n  message: FALSE\n  warning: FALSE\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![](quarto-beesward_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\n$x\n[1] \"Strokes Gained Value\"\n\nattr(,\"class\")\n[1] \"labels\"\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\n$y\n[1] \"Categories\"\n\nattr(,\"class\")\n[1] \"labels\"\n```\n\n\n:::\n:::\n",
+    "supporting": [
+      "quarto-beesward_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

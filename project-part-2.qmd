@@ -12,7 +12,7 @@ execute:
 #| echo: FALSE
 #| message: FALSE
 library(tidyverse)
-golf_data <- read_csv(file = "dg_course_table.csv")
+golf_data <- read_csv(file = "dg_new_course_table.csv")
 ```
 
 ```{r}

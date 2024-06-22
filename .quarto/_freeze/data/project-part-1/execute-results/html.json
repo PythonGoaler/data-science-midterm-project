@@ -1,0 +1,17 @@
+{
+  "hash": "d844014128d9b1891e7785667dc19b22",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Relation between yardage of PGA course and score\"\nauthor: \"\"\nformat: html\nexecute: \n  message: false\n  warning: false\n  echo: false\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](project-part-1_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "project-part-1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

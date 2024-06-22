@@ -1,0 +1,17 @@
+{
+  "hash": "0707c1063e9cb3f1621c6f12ae122d4c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Relation between average yardage of Par 3s and score\"\nexecute:\n  message: false\n  echo: false\n  warning: false\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](Plot2_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "Plot2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

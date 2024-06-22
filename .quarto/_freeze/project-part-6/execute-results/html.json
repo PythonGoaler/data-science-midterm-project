@@ -1,0 +1,17 @@
+{
+  "hash": "06bd9657353e21c62cec6c2ee30367d8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\"\nformat: html\n---\n\nIn this part we figure out whether the difficulty of long range putts, mid range putts, or short range puts makes more of a difference to the score.\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](project-part-6_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](project-part-6_files/figure-html/unnamed-chunk-2-2.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](project-part-6_files/figure-html/unnamed-chunk-2-3.png){width=672}\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\nSlope of Mid Range Putts Graph:\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\n-0.005602726 \n```\n\n\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\nSlope of Long Range Putts Graph:\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\n-0.004722437 \n```\n\n\n:::\n:::",
+    "supporting": [
+      "project-part-6_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

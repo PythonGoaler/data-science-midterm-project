@@ -1,0 +1,17 @@
+{
+  "hash": "ff4b9656319e049358cf7d6c5b623cb2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\"\nformat: html\n---\n\n\n In this part, we try to figure out which of driving accuracy, approach shots, shots around the green, or putting has the most impact on the score. \n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](specificshots_vs_totalscore_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](specificshots_vs_totalscore_files/figure-html/unnamed-chunk-2-2.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](specificshots_vs_totalscore_files/figure-html/unnamed-chunk-2-3.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](specificshots_vs_totalscore_files/figure-html/unnamed-chunk-2-4.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "specificshots_vs_totalscore_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

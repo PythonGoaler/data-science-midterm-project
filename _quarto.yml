@@ -19,6 +19,9 @@ website:
         text: Plot 5
       - href: specificholes_vs_total_score.qmd
         text: Plot 6
+    right:
+      - href: sources.qmd
+        text: Sources
 format:
   html:
     theme: cosmo
